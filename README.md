@@ -57,7 +57,7 @@ We welcome contributions to enhance our website and services. Please fork the re
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+
 
 ## Contact
 
