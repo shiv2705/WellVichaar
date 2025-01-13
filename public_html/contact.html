@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellvichAAr Session Booking</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="images/title-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    
+<!-- Navbar Start -->
+<nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    // Toggle the active class for the mobile menu
+    menuToggle.addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevent event from bubbling
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+
+    // Close the mobile menu if clicked outside of it
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        }
+    });
+
+    // Close the mobile menu after clicking on any link
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+});
+
+    </script>
+   <!-- Navbar Start -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="counselling.html#team">Our Team</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#specializations">Specializations</a>
+        <div class="social-media">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/wellvichaar_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!--session start-->
+
+<section>
+    <div class="container">
+        <!-- Info Section -->
+        <div class="info-container">
+            <h1>Session with WellvichAAr</h1>
+            <p><i class="fas fa-calendar-day"></i><strong>No. of Sessions:</strong> 1</p>
+            <p><i class="fas fa-clock"></i><strong>Session Duration:</strong> 50 minutes</p>
+            <p><i class="fas fa-video"></i><strong>Mode:</strong> Video/Audio over Zoom Meeting</p>
+
+            <h2>Privacy Policy</h2>
+            <div class="card">
+                <i class="fas fa-info-circle"></i>
+                <p><strong>Information Collection:</strong> We collect personal information for therapy purposes only.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-lock"></i>
+                <p><strong>Data Security:</strong> We use industry-standard security measures to protect your data.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-secret"></i>
+                <p><strong>Confidentiality:</strong> Your information is kept confidential, except as required by law.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-archive"></i>
+                <p><strong>Data Retention:</strong> We retain your information as long as necessary and securely dispose of it afterward.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-share-alt"></i>
+                <p><strong>Third-party Disclosure:</strong> We do not share your information with third parties without your consent, except as required by law.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-check"></i>
+                <p><strong>Your Rights:</strong> You have the right to access, correct, or request deletion of your information.</p>
+            </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="payment-container">
+            <h2>Start Your Journey</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp Number</label>
+                    <input type="text" id="whatsapp" name="whatsapp" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="form-group">
+                    <label for="profession">Profession</label>
+                    <input type="text" id="profession" name="profession">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fee">Fee</label>
+                    <select id="fee" name="fee" onchange="updatePaymentButton();" required>
+                        <option value="999">999 rupees</option>
+                    </select>
+                </div>
+                <button type="button" class="button" onclick="sendMail()">Pay ₹ 999</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Terms and Conditions Section -->
+    <div class="container">
+        <div class="info-container">
+            <h2>Terms and Conditions</h2>
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <p><strong>Confidentiality:</strong> Your information is strictly confidential except in cases of harm to self or others.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-calendar-alt"></i>
+                <p><strong>Appointments:</strong> Sessions must be booked at least 2 days in advance. Clients are required to notify us at least 24 hours in advance for cancellations or rescheduling. While refunds will not be provided for cancellations, clients can reschedule their appointments if needed.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-credit-card"></i>
+                <p><strong>Payment:</strong> We accept payment only via credit/debit cards or electronic funds transfer at the time of the session.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-handshake"></i>
+                <p><strong>Therapeutic Relationship:</strong> We work together with respect and trust towards agreed-upon goals.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <p><strong>Boundaries:</strong> We maintain professional boundaries and avoid dual relationships.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-ambulance"></i>
+                <p><strong>Emergencies:</strong> Seek immediate assistance in emergencies; we can provide support and resources.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-ban"></i>
+                <p><strong>Termination:</strong> Either party can end therapy at any time; referrals will be provided if needed.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-file-alt"></i>
+                <p><strong>Records:</strong> Records are securely maintained; clients can access them upon request.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function updatePaymentButton() {
+        const fee = document.getElementById('fee').value;
+        const button = document.querySelector('.button');
+        button.innerHTML = 'Pay ₹ ' + fee + '.00';
+    }
+
+    function sendMail() {
+        const form = document.getElementById('bookingForm');
+        const name = form.name.value;
+        const email = form.email.value;
+        const whatsapp = form.whatsapp.value;
+        const age = form.age.value;
+        const city = form.city.value;
+        const profession = form.profession.value;
+        const message = form.message.value;
+
+        const body = `Name: ${name}\nEmail: ${email}\nWhatsApp: ${whatsapp}\nAge: ${age}\nCity: ${city}\nProfession: ${profession}\nMessage: ${message}`;
+        
+        window.location.href = `mailto:wellvichaar@gmail.com?subject=Session Booking Request&body=${encodeURIComponent(body)}`;
+    }
+</script>
+
+
+<!--session end-->
+
+<section class="contact-section">
+    <h1>GET IN TOUCH</h1>
+    <h2>Contact Information</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>For general inquiries:</p>
+            <a href="mailto:wellvichaar@gmail.com" class="contact-button">wellvichaar@gmail.com</a>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone</h3>
+            <p>Available Mon-Fri, 9 AM - 6 PM:</p>
+            <a href="tel:+919650372358" class="contact-button">+91 9650372358</a>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Consultation</h3>
+            <p>Schedule a personalized session:</p>
+            <a href="counselling.html" class="contact-button">Book Now</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer start -->
+
+<footer>
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <h1>WellVichAAr</h1>
+            <p>Certified Clinical Mental Health Counselor</p>
+        </div>
+
+        <!-- Navigation Buttons Section -->
+        <div class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="counselling.html#team">Team</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#specializations">Specializations</a>
+            <a href="counselling.html">Click Here</a>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" aria-label="Facebook">
+                <!-- Updated Facebook Icon -->
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/wellvichaar_/?igsh=dnR4Y3loY2t4MGV3" aria-label="Instagram">
+                <!-- Updated Instagram Icon -->
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" aria-label="LinkedIn">
+                <!-- Updated LinkedIn Icon -->
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>© 2025 WellVichAAr. All rights reserved.</p>
+            <p><a href="privacy-policy.html#terms-of-services">Terms of Service</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <!-- Developer Info -->
+<div class="developer-info">
+    <p>Developed by Shiv Shekhar Jha</p>
+    <p>
+        <a href="https://www.linkedin.com/in/ssj2705/" class="linkedin-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/shiv2705" class="github-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </p>
+</div>
+
+</footer>
+
+<!-- WhatsApp Floating Icon -->
+<a href="https://wa.me/919650372358" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- footer end -->
+
+
+</body>
+
+</html>

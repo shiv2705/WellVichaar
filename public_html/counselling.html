@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellVichAAr</title>
+    <link rel="stylesheet" href="couselling.css">
+    <link rel="icon" type="image/png" href="images/title-logo.png">
+    <!-- Font Awesome CDN for icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+     
+<!-- Navbar Start -->
+<nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    // Toggle the active class for the mobile menu
+    menuToggle.addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevent event from bubbling
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+
+    // Close the mobile menu if clicked outside of it
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        }
+    });
+
+    // Close the mobile menu after clicking on any link
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+});
+
+    </script>
+   <!-- Navbar Start -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="counselling.html#team">Our Team</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#specializations">Specializations</a>
+        <div class="social-media">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/wellvichaar_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+    <!--hero start-->
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Start Your Therapeutic Journey</h1>
+            <h3>Sessions tailored to your needs, fostering healing, growth, and resilience.</h3>
+            <p>Discover personalized care with professional experts who prioritize your well-being. Unlock a path of transformation with flexible sessions designed just for you.</p>
+            <a href="#">Book Your Session Below</a>
+            <div class="hero-icons">
+                <div class="hero-icon">
+                    <i class="fas fa-user-md"></i> Professional Experts
+                </div>
+                <div class="hero-icon">
+                    <i class="fas fa-calendar-alt"></i> Flexible Scheduling
+                </div>
+                <div class="hero-icon">
+                    <i class="fas fa-heart"></i> Personalized Care
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/1000043857-removebg-preview.png" alt="Therapeutic Journey">
+        </div>
+    </section>
+
+
+    <!--hero end-->
+
+
+    <!--book start-->
+
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #eef4fc; /* Soft blue-gray background */
+        }
+    
+    </style>
+    
+    <section>
+        <div class="card-container">
+            <!-- Single Card -->
+            <div class="card">
+                <h2 class="card-title">Book Your Session</h2>
+                <p><i class="fas fa-user"></i> Number of Sessions: <strong>1</strong></p>
+                <div class="divider"></div>
+                <p><i class="far fa-clock"></i> Duration: <strong>50 Minutes</strong></p>
+                <div class="divider"></div>
+                <p><i class="fas fa-calendar-alt"></i> Flexible Scheduling</p>
+                <div class="divider"></div>
+                <p><i class="fas fa-headset"></i> Mode: <strong>Audio/Video</strong></p>
+                <button class="price-button">INR 999/-</button>
+            </div>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Redirect to 'contact.html' when price button is clicked
+                document.querySelectorAll('.price-button').forEach(button => {
+                    button.addEventListener('click', function () {
+                        window.location.href = 'contact.html';
+                    });
+                });
+            });
+        </script>
+    </section>
+
+    <!--book end-->
+
+
+    
+    <!-- our team start-->
+    
+    <section class="team-wrapper" id="team">
+        <div class="team-title">
+            <h1>Meet Our Experts</h1>
+        </div>
+        <div class="team">
+            <img src="images/Pragati.jpg" alt="Pragati Aggarwal">
+            <h1>Pragati Aggarwal</h1>
+            <h2>Counseling Psychologist</h2>
+            <p>Pragati is dedicated to helping individuals navigate their emotional challenges through a holistic approach. With over 10 years of experience, she’s known for her compassionate listening and effective strategies for mental wellness.</p>
+            <i class="icon fas fa-user-md"></i>
+            <!-- Social Links commented out for now -->
+            <!-- <div class="social-links">
+                <a href="https://www.linkedin.com/in/pragati-aggarwal" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://twitter.com/pragati" target="_blank" class="fab fa-twitter"></a>
+            </div> -->
+        </div>
+        <div class="team">
+            <img src="images/Photo (1)_page-0001 (1).jpg" alt="Prachi Mittal">
+            <h1>Prachi Mittal</h1>
+            <h2>Clinical Psychologist</h2>
+            <p>With a passion for mental health advocacy, Prachi has been helping individuals heal through cognitive therapy techniques and mindfulness practices. She focuses on creating a safe, non-judgmental space for her clients.</p>
+            <i class="icon fas fa-heartbeat"></i>
+            <!-- Social Links commented out for now -->
+            <!-- <div class="social-links">
+                <a href="https://www.linkedin.com/in/prachi-mittal" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://twitter.com/prachi" target="_blank" class="fab fa-twitter"></a>
+            </div> -->
+        </div>
+        <div class="team">
+            <img src="images/IMG_20240116_000031_474 (1).jpg" alt="Vaibhav Jain">
+            <h1>Vaibhav Jain</h1>
+            <h2>Clinical Psychologist</h2>
+            <p>Vaibhav specializes in treating anxiety, depression, and trauma-related disorders. His empathetic approach and professional expertise provide clients with tools to cope with and overcome their mental health struggles.</p>
+            <i class="icon fas fa-brain"></i>
+            <!-- Social Links commented out for now -->
+            <!-- <div class="social-links">
+                <a href="https://www.linkedin.com/in/vaibhav-jain" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://twitter.com/vaibhav" target="_blank" class="fab fa-twitter"></a>
+            </div> -->
+        </div>
+    </section>
+    
+    <!-- Add Font Awesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <!-- our team end-->
+
+
+<!-- feature start -->
+
+<section>
+    <div class="features">
+        <!-- Feature Card 1 -->
+        <div class="feature-card">
+            <div class="icon">
+                <i class="fas fa-user-md"></i> <!-- Healthcare professional icon -->
+            </div>
+            <p>One-on-One Sessions</p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="feature-card">
+            <div class="icon">
+                <i class="fas fa-shield-alt"></i> <!-- Secure and professional icon -->
+            </div>
+            <p>100% Confidentiality</p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="feature-card">
+            <div class="icon">
+                <i class="fas fa-cogs"></i> <!-- Personalized approach icon -->
+            </div>
+            <p>Customized Therapy Plans</p>
+        </div>
+
+        <!-- Feature Card 4 -->
+        <div class="feature-card">
+            <div class="icon">
+                <i class="fas fa-brain"></i> <!-- Cognitive-based therapy icon -->
+            </div>
+            <p>Scientifically Proven Methods</p>
+        </div>
+
+        <!-- Feature Card 5 -->
+        <div class="feature-card">
+            <div class="icon">
+                <i class="fas fa-users"></i> <!-- Group therapy icon -->
+            </div>
+            <p>Group Therapy Sessions</p>
+        </div>
+
+        <!-- Feature Card 6 -->
+        <div class="feature-card">
+            <div class="icon">
+                <i class="fas fa-calendar-check"></i> <!-- Schedule management icon -->
+            </div>
+            <p>Flexible Appointment Scheduling</p>
+        </div>
+
+        <!-- Feature Card 7 -->
+        <div class="feature-card">
+            <div class="icon">
+                <i class="fas fa-headset"></i> <!-- Remote therapy icon -->
+            </div>
+            <p>Online & Remote Support</p>
+        </div>
+
+        <!-- Feature Card 8 -->
+        <div class="feature-card">
+            <div class="icon">
+                <i class="fas fa-laptop-code"></i> <!-- Tech-driven therapy icon -->
+            </div>
+            <p>Interactive Online Tools</p>
+        </div>
+    </div>
+</section>
+<!-- feature end -->
+
+<!--contact us start-->
+
+<section class="contact-section">
+    <h1>GET IN TOUCH</h1>
+    <h2>Contact Information</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>For general inquiries:</p>
+            <a href="mailto:wellvichaar@gmail.com" class="contact-button">wellvichaar@gmail.com</a>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone</h3>
+            <p>Available Mon-Fri, 9 AM - 6 PM:</p>
+            <a href="tel:+919650372358" class="contact-button">+91 9650372358</a>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Consultation</h3>
+            <p>Schedule a personalized session:</p>
+            <a href="counselling.html" class="contact-button">Book Now</a>
+        </div>
+    </div>
+</section>
+
+<!--contact us end-->
+
+<!-- Contact Form Start -->
+
+
+<section class="contact-form-section">
+    <div class="container">
+        <h1>Got Queries?</h1>
+        <p>If you have any questions or want to reach out for events, keynotes, and corporate queries, please fill out the form.</p>
+        <form>
+            <div class="form-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="WhatsApp Number">
+            </div>
+            <div class="form-group">
+                <input type="text" id="age" name="age" placeholder="Age">
+                <input type="text" id="city" name="city" placeholder="City">
+                <input type="text" id="profession" name="profession" placeholder="Profession">
+            </div>
+            <textarea id="message" name="message" placeholder="Message" rows="4"></textarea>
+            <input class="button" type="submit" value="Submit" onclick="sendMail();">
+        </form>
+    </div>
+</section>
+
+<script>
+    function sendMail() {
+        const fields = {
+            "First Name": document.getElementById('first-name').value,
+            "Last Name": document.getElementById('last-name').value,
+            "Email": document.getElementById('email').value,
+            "WhatsApp Number": document.getElementById('whatsapp').value,
+            "Age": document.getElementById('age').value,
+            "City": document.getElementById('city').value,
+            "Profession": document.getElementById('profession').value,
+            "Message": document.getElementById('message').value
+        };
+
+        let emailSubject = `New Query from ${fields["First Name"]} ${fields["Last Name"]}`;
+        let emailBody = "";
+
+        for (let key in fields) {
+            emailBody += `${key}: ${fields[key]}\n`;
+        }
+
+        const mailtoLink = `mailto:wellvichaar@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = mailtoLink;
+    }
+</script>
+
+<!-- Contact Form End -->
+
+
+<!-- footer start -->
+
+<footer>
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <h1>WellVichAAr</h1>
+            <p>Certified Clinical Mental Health Counselor</p>
+        </div>
+
+        <!-- Navigation Buttons Section -->
+        <div class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="counselling.html#team">Team</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#specializations">Specializations</a>
+            <a href="counselling.html">Click Here</a>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" aria-label="Facebook">
+                <!-- Updated Facebook Icon -->
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/wellvichaar_/?igsh=dnR4Y3loY2t4MGV3" aria-label="Instagram">
+                <!-- Updated Instagram Icon -->
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" aria-label="LinkedIn">
+                <!-- Updated LinkedIn Icon -->
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>© 2025 WellVichAAr. All rights reserved.</p>
+            <p><a href="privacy-policy.html#terms-of-services">Terms of Service</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <!-- Developer Info -->
+<div class="developer-info">
+    <p>Developed by Shiv Shekhar Jha</p>
+    <p>
+        <a href="https://www.linkedin.com/in/ssj2705/" class="linkedin-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/shiv2705" class="github-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </p>
+</div>
+
+
+</footer>
+
+<!-- WhatsApp Floating Icon -->
+<a href="https://wa.me/919650372358" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- footer end -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellVichAAr</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="image/png" href="images/title-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+
+</head>
+
+<body>
+
+  
+ <!-- Navbar Start -->
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="counselling.html#team">Our Team</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#specializations">Specializations</a>
+        <div class="social-media">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/wellvichaar_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        }
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+});
+</script>
+
+
+<!-- Navbar End -->
+
+
+<!--about us start-->
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+</style>
+
+<section id="about" class="aboutus-section">
+    <div class="aboutus-container">
+        <div class="aboutus-header">
+            <h2>About Us</h2>
+            <p>At WellVichAAr, we are dedicated to mental wellness and personal growth through evidence-based care, innovative training programs, and professional services.</p>
+        </div>
+        <div class="aboutus-content">
+            <div class="aboutus-card">
+                <div class="aboutus-card-icon">🌿</div>
+                <h3>A Sanctuary for Mental Wellness</h3>
+                <p>
+                    Step into a realm where understanding meets transformation. At WellVichAAr, we guide, empower, and uplift, led by an exceptional team of certified psychologists and psychiatrists.
+                </p>
+            </div>
+            <div class="aboutus-card">
+                <div class="aboutus-card-icon">🌱</div>
+                <h3>Empowering Growth</h3>
+                <p>
+                    Discover resilience, growth, and liberation through therapies like Positive Psychology and Hypnotherapy. Let us be your partners in crafting a fulfilling tomorrow.
+                </p>
+            </div>
+            <div class="aboutus-card">
+                <div class="aboutus-card-icon">📘</div>
+                <h3>Internship Programs</h3>
+                <p>
+                    Hands-on training in Cognitive Behavioral Therapy (CBT), Rational Emotive Behavior Therapy (REBT), Hypnotherapy, and more, under expert guidance for aspiring professionals.
+                </p>
+            </div>
+            <div class="aboutus-card">
+                <div class="aboutus-card-icon">💡</div>
+                <h3>Professional Projects</h3>
+                <p>
+                    We assist with synopsis, research papers, dissertations, and thesis writing, helping students and professionals achieve their academic goals while advancing mental health.
+                </p>
+            </div>
+            <div class="aboutus-card">
+                <div class="aboutus-card-icon">🌍</div>
+                <h3>Our Mission</h3>
+                <p>
+                    To empower individuals with compassionate, personalized care. We build emotional resilience and positive habits, ensuring clarity and confidence in navigating life's challenges.
+                </p>
+            </div>
+            <div class="aboutus-card">
+                <div class="aboutus-card-icon">✨</div>
+                <h3>Our Vision</h3>
+                <p>
+                    A world where mental wellness is recognized as essential to overall health, providing tools and support for a balanced, fulfilling life that nurtures mind and spirit.
+                </p>
+            </div>
+            <div class="aboutus-card">
+                <div class="aboutus-card-icon">🔍</div>
+                <h3>Evidence-Based Therapies</h3>
+                <p>
+                    We specialize in Positive Psychology, Hypnotherapy, CBT, and Expressive Art Therapy, offering tailored support for grief, guilt, fears, and more.
+                </p>
+            </div>
+            <div class="aboutus-card">
+                <div class="aboutus-card-icon">💼</div>
+                <h3>Career Growth</h3>
+                <p>
+                    Explore opportunities to enhance your career in mental health through training, internships, and certifications with WellVichAAr.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--about us end-->
+
+
+
+<!--our services start-->
+
+<style>
+    /* Global Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa; /* Soft light background for contrast */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+</style>
+
+<section>
+    <div>
+        <h1 id="services-heading" style="color: #005b6e; /* Deep Blue */">Our Services</h1>
+        <div id="services-container">
+            
+            <!-- Project Services Card -->
+            <div class="service-card">
+                <h3>Project Services</h3>
+                <ul>
+                    <li>Synopsis</li>
+                    <li>Research Paper</li>
+                    <li>Dissertation Writing</li>
+                    <li>Thesis Writing</li>
+                </ul>
+            </div>
+
+        <!-- Counseling Sessions Card -->
+        <div class="service-card">
+            <h3>Counseling Sessions (Areas)</h3>
+            <ul>
+                <li>Personal or Individual Counseling: Your Journey to Self-Discovery</li>
+                <li>Mindfulness: Find Peace Within, Flourish in Every Moment</li>
+                <li>Couple Counseling: Reignite the Flame, Rewrite Your Love Story</li>
+                <li>Family Counseling: Together, We Strengthen the Heart of Your Family</li>
+                <li>Career and Academic Counseling: Empowering Dreams, Shaping Futures</li>
+                <li>Group Therapy: In Unity, Healing Flourishes</li>
+                <li>Depression: Healing Hearts, Restoring Hope</li>
+                <li>Stress Management: From Chaos to Calm: Embrace Serenity</li>
+                <li>Anxiety Issues: Embrace Courage, Conquer Anxiety</li>
+                <li>Relationship Issues: Transform Struggles into Strengths</li>
+                <li>Work-Life Balance: Discover Harmony, Live Your Best Life</li>
+                <li>PTSD: From Survival to Thriving</li>
+                <li>Low Self-Esteem: Rise Stronger, Shine Brighter</li>
+                <li>Body Image Issues: Embrace Your Beauty, Empower Your Spirit</li>
+                <li>Emotional Stability: Navigating Life's Storms with Resilience</li>
+                <li>Sleep Issues: Awaken Your Dreams, Restful Nights</li>
+                <li>Low Motivation and Energy: Ignite Passion, Energize Purpose</li>
+                <li>Personal and Professional Growth: Unleash Potential</li>
+                <li>Goal Setting: Dream It, Believe It, Achieve It</li>
+                <li>Addiction: Break Free, Embrace Renewal</li>
+                <li>Grief: Honoring Loss, Embracing Healing</li>
+                <li>Career Management: Empowering Your Career Journey</li>
+            </ul>
+        </div>
+
+            <!-- Internships Card -->
+            <div class="service-card">
+                <h3>Internships</h3>
+                <ul>
+                    <li>Hypnotherapy</li>
+                    <li>Positive Psychology Course</li>
+                    <li>Expressive Art Therapy</li>
+                    <li>CBT</li>
+                    <li>REBT</li>
+                </ul>
+            </div>
+
+            <!-- Additional Cards for Extra Services -->
+            <div class="service-card">
+                <h3>Life Coaching</h3>
+                <ul>
+                    <li>Unlocking Personal Potential</li>
+                    <li>Goal Setting and Achievement</li>
+                    <li>Overcoming Life Obstacles</li>
+                    <li>Confidence and Motivation Building</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Corporate Wellness</h3>
+                <ul>
+                    <li>Stress Management for Employees</li>
+                    <li>Team Building Workshops</li>
+                    <li>Leadership Development</li>
+                    <li>Work-Life Integration Coaching</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Mind-Body Connection</h3>
+                <ul>
+                    <li>Yoga and Meditation for Stress Relief</li>
+                    <li>Breathing Techniques for Anxiety</li>
+                    <li>Holistic Health Practices</li>
+                    <li>Emotional and Physical Wellness</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--our services end-->
+
+
+<!-- Our Team Start -->
+
+<!-- Include Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<section>
+    <div>
+        <h1 id="team-heading">Our Team</h1>
+    </div>
+    <div id="team-list">
+        <!-- Clinical Psychologists -->
+        <div class="team-card">
+            <i class="fas fa-brain icon"></i> <!-- Brain icon -->
+            <p>1. Clinical Psychologists</p>
+        </div>
+
+        <!-- Counseling Psychologists -->
+        <div class="team-card">
+            <i class="fas fa-comments icon"></i> <!-- Speech bubble icon -->
+            <p>2. Counseling Psychologists</p>
+        </div>
+
+        <!-- Psychiatrists -->
+        <div class="team-card">
+            <i class="fas fa-stethoscope icon"></i> <!-- Stethoscope icon -->
+            <p>3. Psychiatrists</p>
+        </div>
+
+        <!-- Therapists -->
+        <div class="team-card">
+            <i class="fas fa-heart icon"></i> <!-- Heart icon -->
+            <p>4. Therapists</p>
+        </div>
+
+        <!-- Life Coaches -->
+        <div class="team-card">
+            <i class="fas fa-users icon"></i> <!-- Users icon -->
+            <p>5. Life Coaches</p>
+        </div>
+
+        <!-- Support Staff -->
+        <div class="team-card">
+            <i class="fas fa-people-carry icon"></i> <!-- Support Staff icon -->
+            <p>6. Support Staff</p>
+        </div>
+
+        <!-- Child Psychologists -->
+        <div class="team-card">
+            <i class="fas fa-child icon"></i> <!-- Child icon -->
+            <p>7. Child Psychologists</p>
+        </div>
+
+        <!-- Marriage Counselors -->
+        <div class="team-card">
+            <i class="fas fa-ring icon"></i> <!-- Ring icon -->
+            <p>8. Marriage Counselors</p>
+        </div>
+    </div>
+</section>
+
+<!-- Our Team End -->
+
+
+<!-- Contact Us Start -->
+
+<section class="contact-section">
+    <h1>GET IN TOUCH</h1>
+    <h2>Contact Information</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>For general inquiries:</p>
+            <a href="mailto:wellvichaar@gmail.com" class="contact-button">wellvichaar@gmail.com</a>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone</h3>
+            <p>Available Mon-Fri, 9 AM - 6 PM:</p>
+            <a href="tel:+919650372358" class="contact-button">+91 9650372358</a>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Consultation</h3>
+            <p>Schedule a personalized session:</p>
+            <a href="counselling.html" class="contact-button">Book Now</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Add Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+<!-- Contact Us End -->
+
+
+<!-- contact form start-->
+
+<section class="contact-form-section">
+    <div class="container">
+        <h1>Got Queries?</h1>
+        <p>If you have any questions or want to reach out for events, keynotes, and corporate queries, please fill out the form.</p>
+        <form>
+            <div class="form-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="WhatsApp Number">
+            </div>
+            <div class="form-group">
+                <input type="text" id="age" name="age" placeholder="Age">
+                <input type="text" id="city" name="city" placeholder="City">
+                <input type="text" id="profession" name="profession" placeholder="Profession">
+            </div>
+            <textarea id="message" name="message" placeholder="Message" rows="4"></textarea>
+            <input class="button" type="submit" value="Submit" onclick="sendMail();">
+        </form>
+    </div>
+</section>
+
+<script>
+    function sendMail() {
+        const fields = {
+            "First Name": document.getElementById('first-name').value,
+            "Last Name": document.getElementById('last-name').value,
+            "Email": document.getElementById('email').value,
+            "WhatsApp Number": document.getElementById('whatsapp').value,
+            "Age": document.getElementById('age').value,
+            "City": document.getElementById('city').value,
+            "Profession": document.getElementById('profession').value,
+            "Message": document.getElementById('message').value
+        };
+
+        let emailSubject = `New Query from ${fields["First Name"]} ${fields["Last Name"]}`;
+        let emailBody = "";
+
+        for (let key in fields) {
+            emailBody += `${key}: ${fields[key]}\n`;
+        }
+
+        const mailtoLink = `mailto:wellvichaar@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = mailtoLink;
+    }
+</script>
+
+
+<!--contact form end-->
+
+
+<!-- footer start -->
+
+<footer>
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <h1>WellVichAAr</h1>
+            <p>Certified Clinical Mental Health Counselor</p>
+        </div>
+
+        <!-- Navigation Buttons Section -->
+        <div class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="counselling.html#team">Team</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#specializations">Specializations</a>
+            <a href="counselling.html">Click Here</a>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" aria-label="Facebook">
+                <!-- Updated Facebook Icon -->
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/wellvichaar_/?igsh=dnR4Y3loY2t4MGV3" aria-label="Instagram">
+                <!-- Updated Instagram Icon -->
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" aria-label="LinkedIn">
+                <!-- Updated LinkedIn Icon -->
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>© 2025 WellVichAAr. All rights reserved.</p>
+            <p><a href="privacy-policy.html#terms-of-services">Terms of Service</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <!-- Developer Info -->
+<div class="developer-info">
+    <p>Developed by Shiv Shekhar Jha</p>
+    <p>
+        <a href="https://www.linkedin.com/in/ssj2705/" class="linkedin-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/shiv2705" class="github-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </p>
+</div>
+
+</footer>
+
+<!-- WhatsApp Floating Icon -->
+<a href="https://wa.me/919650372358" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- footer end -->
+
+
+</body>
+
+</html>

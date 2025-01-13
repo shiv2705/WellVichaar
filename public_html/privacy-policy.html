@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellvichAAr</title>
+    <link rel="stylesheet" href="privacy-policy.css">
+    <link rel="icon" type="image/png" href="images/title-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+   
+<!-- Navbar Start -->
+<nav>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    // Toggle the active class for the mobile menu
+    menuToggle.addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevent event from bubbling
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+
+    // Close the mobile menu if clicked outside of it
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        }
+    });
+
+    // Close the mobile menu after clicking on any link
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+});
+
+    </script>
+   
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="counselling.html#team">Our Team</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#specializations">Specializations</a>
+        <div class="social-media">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/wellvichaar_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- Privacy Policy Section -->
+
+
+<section class="privacy" id="privacy">
+    <div class="container">
+        <div class="privacy-header">
+            <h1>PRIVACY POLICY</h1>
+            <h2>LAST UPDATED JAN 2025</h2>
+        </div>
+        <div class="policy-container">
+            <div class="card">
+                <i class="icon fas fa-user-secret"></i>
+                <h1>Information Collection</h1>
+                <p>We collect personal information for therapy purposes only.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-shield-alt"></i>
+                <h1>Data Security</h1>
+                <p>We use industry-standard security measures to protect your data.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-user-lock"></i>
+                <h1>Confidentiality</h1>
+                <p>Your information is kept confidential, except as required by law.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-clock"></i>
+                <h1>Data Retention</h1>
+                <p>We retain your information as long as necessary and securely dispose of it afterward.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-exchange-alt"></i>
+                <h1>Third-party Disclosure</h1>
+                <p>We do not share your information with third parties without your consent, except as required by law.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-user-check"></i>
+                <h1>Your Rights</h1>
+                <p>You have the right to access, correct, or request deletion of your information.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Divider -->
+<div class="divider"></div>
+
+<!-- Terms of Services Section -->
+<section class="terms" id="terms-of-services">
+    <div class="container">
+        <div class="terms-header">
+            <h1>TERMS OF SERVICES</h1>
+            <h2>LAST UPDATED JAN 2025</h2>
+        </div>
+        <div class="terms-container">
+            <div class="card">
+                <i class="icon fas fa-user-secret"></i>
+                <h1>1. Confidentiality</h1>
+                <p>Your information is strictly confidential except in cases of harm to self or others.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-calendar-alt"></i>
+                <h1>2. Appointments</h1>
+                <p>Sessions must be booked at least 2 days in advance. Notify us at least 24 hours in advance for cancellations or rescheduling.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-credit-card"></i>
+                <h1>3. Payment</h1>
+                <p>We accept payment only via credit/debit cards or electronic funds transfer at the time of the session.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-handshake"></i>
+                <h1>4. Therapeutic Relationship</h1>
+                <p>We work together with respect and trust towards agreed-upon goals.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-border-all"></i>
+                <h1>5. Boundaries</h1>
+                <p>We maintain professional boundaries and avoid dual relationships.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-ambulance"></i>
+                <h1>6. Emergencies</h1>
+                <p>Seek immediate assistance in emergencies; we can provide support and resources.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-times-circle"></i>
+                <h1>7. Termination</h1>
+                <p>Either party can end therapy at any time; referrals will be provided if needed.</p>
+            </div>
+            <div class="card">
+                <i class="icon fas fa-file-alt"></i>
+                <h1>8. Records</h1>
+                <p>Records are securely maintained; clients can access them upon request.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--END PP-->
+
+
+
+<!-- footer start -->
+<!-- footer start -->
+
+<footer>
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <h1>WellVichAAr</h1>
+            <p>Certified Clinical Mental Health Counselor</p>
+        </div>
+
+        <!-- Navigation Buttons Section -->
+        <div class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="counselling.html#team">Team</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#specializations">Specializations</a>
+            <a href="counselling.html">Click Here</a>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" aria-label="Facebook">
+                <!-- Updated Facebook Icon -->
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/wellvichaar_/?igsh=dnR4Y3loY2t4MGV3" aria-label="Instagram">
+                <!-- Updated Instagram Icon -->
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" aria-label="LinkedIn">
+                <!-- Updated LinkedIn Icon -->
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>© 2025 WellVichAAr. All rights reserved.</p>
+            <p><a href="privacy-policy.html#terms-of-services">Terms of Service</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <!-- Developer Info -->
+<div class="developer-info">
+    <p>Developed by Shiv Shekhar Jha</p>
+    <p>
+        <a href="https://www.linkedin.com/in/ssj2705/" class="linkedin-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/shiv2705" class="github-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </p>
+</div>
+
+</footer>
+
+<!-- WhatsApp Floating Icon -->
+<a href="https://wa.me/919650372358" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- footer end -->
+
+
+<!-- footer end -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>WellVichAAr</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/title-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+  
+
+ <!-- Navbar Start -->
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="counselling.html#team">Our Team</a>
+        <a href="#services">Services</a>
+        <a href="#specializations">Specializations</a>
+        <div class="social-media">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/wellvichaar_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        }
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            menuToggle.classList.remove("active");
+        });
+    });
+});
+</script>
+
+
+<!-- Navbar End -->
+
+
+    <!-- Hero start -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Your journey to clarity and purpose begins here.</h2>
+        <h1>Welcome to WellVichAAr</h1>
+        <h1>Finding meaning in every step...</h1>
+        <h2>
+            At WellVichAAr, we blend compassion and expertise to support your mental well-being. Let's create a life filled with balance, growth, and joy.
+        </h2>
+        <a href="counselling.html" class="contact-button">Start Your Transformation</a>
+    </div>
+    <div class="hero-image">
+        <img src="images/rozi.jpg" alt="Rozi's Image" class="rozi-image">
+        <div class="rozi-details">
+            <h3>Miss Rozi</h3>
+            <p>Counseling Psychologist | Founder & CEO of WellVichAAr</p>
+        </div>
+    </div>
+</section>
+<!-- Hero end -->
+
+    
+
+<!--About Us Start-->
+
+    <section id="about" class="aboutus-section">
+        <div class="aboutus-container">
+            <div class="aboutus-content">
+                <h1>Welcome to WellVichAAr</h1>
+                <h2>Your Way of Fulfillment and Wellbeing</h2>
+                <p>At WellVichAAr, we believe in the transformative power of mental well-being. Our name reflects our mission—"Well" for wellness and "Vichaar" for thoughtful care—as we strive to create a safe, nurturing space for you to explore, heal, and grow. Whether you're seeking guidance, understanding, or professional counseling, our team of compassionate and experienced mental health professionals is here to support you. We understand that every individual’s journey is unique, and we’re committed to providing personalized care tailored to your needs.<br><br>
+                Take the first step towards a healthier mind and a happier life. Together, we’ll uncover the strength within you to navigate challenges, embrace positivity, and achieve emotional well-being.<br><br>
+                Your journey starts here. Welcome to WellVichAAr—where thoughtful care meets lasting wellness.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Us end -->
+    
+
+    <!--Our services start-->
+
+    <section class="services-section" id="services">
+        <h2>Services</h2>
+        <h1>How We Can Support You on Your Journey to Well-being</h1>
+        <a href="counselling.html">Let's Explore our range of services designed to guide you toward mental wellness →</a>
+        
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="images/images (1).jpeg" alt="Stress Management">
+                <h2>Stress Management</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (2).jpeg" alt="Anxiety Issue">
+                <h2>Anxiety Issue</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/main-qimg-6146ca5230dc65d769c7bc43980ea7e0-lq.jpeg" alt="Relationship Issues">
+                <h2>Relationship Issues</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (10).jpeg" alt="Goal Setting & Manifestation">
+                <h2>Goal Setting & Manifestation</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (9).jpeg" alt="Personal & Professional Growth">
+                <h2>Personal & Professional Growth</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (8).jpeg" alt="Low motivation & Energy">
+                <h2>Low motivation & Energy</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (7).jpeg" alt="Sleep Issues">
+                <h2>Sleep Issues</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (6).jpeg" alt="Emotional Stability">
+                <h2>Emotional Stability</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (11).jpeg" alt="Career Management">
+                <h2>Career Management</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (3).jpeg" alt="Work-Life Balance">
+                <h2>Work-Life Balance</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (5).jpeg" alt="Low Self Esteem and Confidence">
+                <h2>Low Self Esteem and Confidence</h2>
+            </div>
+            <div class="service-item">
+                <img src="images/images (4).jpeg" alt="Post Traumatic Stress">
+                <h2>Post Traumatic Stress</h2>
+            </div>
+        </div>
+    </section>
+    
+    <!-- End OUR SERVICES -->
+
+    <!-- Book start -->
+
+    
+    <section class="book-section">
+        <div class="book-card">
+            <h1>Start Your Journey</h1>
+            <h2>Book A Session</h2>
+            <h3><del>₹ 2,999/-</del></h3>
+            <p class="price">₹ 999/-</p>
+            <p><i class="far fa-check-circle" style="color: #3498db;"></i> No. of Sessions: 1</p>
+            <p><i class="far fa-clock" style="color: #3498db;"></i> Session Duration: 50 minutes</p>
+            <p><i class="fas fa-chalkboard-teacher" style="color: #3498db;"></i> Mode: Video or Audio</p>
+            <p><i class="fas fa-shield-alt" style="color: #3498db;"></i> Completely Confidential</p>
+            <a href="counselling.html" class="book-button">
+                <i class="fas fa-heart" style="color: white;"></i> Click Here
+            </a>
+        </div>
+    </section>
+
+
+<!-- Book end -->
+
+
+    <!-- What Makes us Unique? start -->
+    
+    <section class="unique-section" id="specializations">
+        <div class="unique-content">
+            
+            <h1 style="font-size: 36px; margin-bottom: 20px;">What Makes Us Unique?</h1>
+            <div class="icons"> <!-- This will contain all icon items -->
+                <div class="icon-item">
+                    <i class="fas fa-user-shield"></i>
+                    <p>Individual Consultation</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Completely Confidential</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <p>Personalised Approach</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-search"></i>
+                    <p>Evidence Based Therapies</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-user-md"></i>
+                    <p>RCI certified clinical psychologist</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-user-tie"></i>
+                    <p>Top tier psychiatrist</p>
+                </div>
+            </div>
+        </div>
+        <div class="unique-image">
+            <img src="images/say-transformed_(1)-transformed.webp" alt="Therapy Session">
+        </div>
+    </section>
+
+    <!--  What Makes us Unique? end -->
+
+    <!-- step section start -->
+
+<section class="steps-section">
+    <h1>Start Therapy in 3 Easy Steps</h1>
+    <div class="steps-container">
+        <div class="step">
+            <div class="icon-container">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>01</p>
+            <p>Enrol for the Session</p>
+        </div>
+        <div class="step">
+            <div class="icon-container">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+            <p>02</p>
+            <p>Schedule Appointment</p>
+        </div>
+        <div class="step">
+            <div class="icon-container">
+                <i class="fas fa-video"></i>
+            </div>
+            <p>03</p>
+            <p>Join the Call at the Scheduled Time</p>
+        </div>
+    </div>
+</section>
+
+<!-- step section end -->
+
+
+ <!-- Contact Us Start -->
+
+ <section class="contact-section">
+    <h1>GET IN TOUCH</h1>
+    <h2>Contact Information</h2>
+    <div class="contact-container">
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>For general inquiries:</p>
+            <a href="mailto:wellvichaar@gmail.com" class="contact-button">wellvichaar@gmail.com</a>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone</h3>
+            <p>Available Mon-Fri, 9 AM - 6 PM:</p>
+            <a href="tel:+919650372358" class="contact-button">+91 9650372358</a>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Consultation</h3>
+            <p>Schedule a personalized session:</p>
+            <a href="counselling.html" class="contact-button">Book Now</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Add Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+<!-- Contact Us End -->
+
+
+
+<!-- Contact Form Start -->
+
+
+<section class="contact-form-section">
+    <div class="container">
+        <h1>Got Queries?</h1>
+        <p>If you have any questions or want to reach out for events, keynotes, and corporate queries, please fill out the form.</p>
+        <form>
+            <div class="form-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="WhatsApp Number">
+            </div>
+            <div class="form-group">
+                <input type="text" id="age" name="age" placeholder="Age">
+                <input type="text" id="city" name="city" placeholder="City">
+                <input type="text" id="profession" name="profession" placeholder="Profession">
+            </div>
+            <textarea id="message" name="message" placeholder="Message" rows="4"></textarea>
+            <input class="button" type="submit" value="Submit" onclick="sendMail();">
+        </form>
+    </div>
+</section>
+
+<script>
+    function sendMail() {
+        const fields = {
+            "First Name": document.getElementById('first-name').value,
+            "Last Name": document.getElementById('last-name').value,
+            "Email": document.getElementById('email').value,
+            "WhatsApp Number": document.getElementById('whatsapp').value,
+            "Age": document.getElementById('age').value,
+            "City": document.getElementById('city').value,
+            "Profession": document.getElementById('profession').value,
+            "Message": document.getElementById('message').value
+        };
+
+        let emailSubject = `New Query from ${fields["First Name"]} ${fields["Last Name"]}`;
+        let emailBody = "";
+
+        for (let key in fields) {
+            emailBody += `${key}: ${fields[key]}\n`;
+        }
+
+        const mailtoLink = `mailto:wellvichaar@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = mailtoLink;
+    }
+</script>
+
+<!-- Contact Form End -->
+
+
+<!-- footer start -->
+
+<footer>
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <h1>WellVichAAr</h1>
+            <p>Certified Clinical Mental Health Counselor</p>
+        </div>
+
+        <!-- Navigation Buttons Section -->
+        <div class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="counselling.html#team">Team</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#specializations">Specializations</a>
+            <a href="counselling.html">Click Here</a>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <a href="https://www.facebook.com/people/Wellvichaar/61560997303000/?mibextid=ZbWKwL" aria-label="Facebook">
+                <!-- Updated Facebook Icon -->
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/wellvichaar_/?igsh=dnR4Y3loY2t4MGV3" aria-label="Instagram">
+                <!-- Updated Instagram Icon -->
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/wellvichaar/" aria-label="LinkedIn">
+                <!-- Updated LinkedIn Icon -->
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>© 2025 WellVichAAr. All rights reserved.</p>
+            <p><a href="privacy-policy.html#terms-of-services">Terms of Service</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+
+<!-- Developer Info -->
+
+<div class="developer-info">
+    <p>Developed by Shiv Shekhar Jha</p>
+    <p>
+        <a href="https://www.linkedin.com/in/ssj2705/" class="linkedin-icon">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/shiv2705" class="github-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </p>
+</div>
+
+
+</footer>
+
+<!-- WhatsApp Floating Icon -->
+<a href="https://wa.me/919650372358" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- footer end -->
+
+</body>
+
+</html>
